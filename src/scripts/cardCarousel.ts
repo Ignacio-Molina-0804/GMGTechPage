@@ -1,6 +1,6 @@
 // src/scripts/cardCarousel.ts
 
-export function initCardCarousel(selector: string, interval: number = 3000) {
+export function initCardCarousel(selector: string, interval: number = 5000) {
   const container = document.querySelector(selector);
   if (!container) return;
 
