@@ -3,6 +3,7 @@
 import "../styles/global.css";
 import "@fontsource/barlow";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -13,14 +14,21 @@ import Header from "../components/Header.astro";
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>GMG Tech</title>
   </head>
 
-  <body class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_1000px_at_50%_200px,#3e3e3e,transparent),linear-gradient(to_bottom,#0f172a,#020617)] bg-repeat">
+  <body
+    class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_1000px_at_50%_200px,#3e3e3e,transparent),linear-gradient(to_bottom,#0f172a,#020617)] bg-repeat"
+  >
     <Header />
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
