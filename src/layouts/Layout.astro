@@ -1,11 +1,12 @@
 ---
+// Layout.astro
 import "../styles/global.css";
 import "@fontsource/barlow";
 import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="min-h-full bg-slate-950">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -15,7 +16,8 @@ import Header from "../components/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>GMG Tech</title>
   </head>
-  <body class="bg-slate-950 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]">
+
+  <body class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_1000px_at_50%_200px,#3e3e3e,transparent),linear-gradient(to_bottom,#0f172a,#020617)] bg-repeat">
     <Header />
     <main>
       <slot />
