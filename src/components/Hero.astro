@@ -1,41 +1,40 @@
 ---
-
 ---
 
 <section class="pt-40 px-8">
   <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-    <!-- Columna izquierda: texto -->
+    
+    <!-- Texto -->
     <div class="flex-1 text-center md:text-left">
       <h1 class="text-white text-4xl font-bold mb-4">
         INNOVACIÓN Y TECNOLOGÍA A TU ALCANCE
       </h1>
       <h3 class="text-white text-xl leading-relaxed">
-        En <span class="font-semibold text-blue-400">GMGTECH</span> transformamos
-        ideas en soluciones digitales. Creamos experiencias únicas que impulsan tu
-        negocio y conectan con tus clientes.
+        En <span class="font-semibold text-blue-400">GMGTECH</span> transformamos ideas en soluciones digitales. 
+        Creamos experiencias únicas que impulsan tu negocio y conectan con tus clientes.
       </h3>
     </div>
 
-    <!-- Columna derecha: imágenes apiladas estilo "cards" -->
-    <div class="relative flex-1 h-72">
-      <!-- Imagen 1 (fondo) -->
-      <img
-        src="/pageImage/pagina-1.jpg"
-        alt="pagina1"
-        class="absolute top-10 left-10 w-full h-72 rounded-lg shadow-xl object-cover scale-95"
-      />
-      <!-- Imagen 2 (medio) -->
-      <img
-        src="/pageImage/pagina-2.jpg"
-        alt="pagina2"
-        class="absolute top-5 left-5 w-full h-72 rounded-lg shadow-xl object-cover scale-98"
-      />
-      <!-- Imagen 3 (frontal) -->
-      <img
-        src="/pageImage/pagina-1.jpg"
-        alt="pagina3"
-        class="relative w-full h-72 rounded-lg shadow-xl object-cover"
-      />
+    <!-- Tarjetas apiladas -->
+    <div id="carousel" class="relative flex-1 h-80 overflow-hidden">
+      <a href="/pagina1" class="card absolute w-full h-72">
+        <img src="/pageImage/pagina-1.jpg" class="w-full h-72 object-cover rounded-xl shadow-2xl">
+      </a>
+      <a href="/pagina2" class="card absolute w-full h-72">
+        <img src="/pageImage/pagina-2.jpg" class="w-full h-72 object-cover rounded-xl shadow-2xl">
+      </a>
+      <a href="/pagina3" class="card absolute w-full h-72">
+        <img src="/pageImage/pagina-1.jpg" class="w-full h-72 object-cover rounded-xl shadow-2xl">
+      </a>
     </div>
   </div>
 </section>
+
+<script>
+  import { initCardCarousel } from "../scripts/cardCarousel";
+
+  // Espera al DOM cargado
+  document.addEventListener("DOMContentLoaded", () => {
+    initCardCarousel("#carousel");
+  });
+</script>
