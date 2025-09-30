@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import GmailIcon from "../components/icons/GmailIcon.astro";
+import PhoneIcon from "../components/icons/PhoneIcon.astro";
+import MapIcon from "../components/icons/MapIcon.astro";
 
 import HeroContact from "../components/HeroContact.astro";
 ---
@@ -9,8 +12,18 @@ import HeroContact from "../components/HeroContact.astro";
     class="min-h-screen from-gray-900 via-gray-800 to-black text-white px-6"
   >
     <!-- Título principal -->
-
     <HeroContact />
+
+    <!-- Título y descripción de servicios -->
+    <div class="max-w-6xl mx-auto text-center mb-16 pt-26">
+      <h2 class="text-4xl font-bold mb-4 text-blue-400">Nuestros Servicios</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Si todavía no lo recordás, te mostramos nuevamente todos nuestros
+        <span class="text-blue-400 font-semibold">servicios</span>, pensados
+        para impulsar tu negocio con soluciones digitales modernas, seguras y
+        adaptadas a vos.
+      </p>
+    </div>
 
 
   </section>
