@@ -1,9 +1,46 @@
 ---
-// servicio2.astro
-
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout title="Plan Profesional">
+  <section class="py-20 text-center text-white max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-blue-400 mb-6">Plan Profesional</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg mb-12">
+      El <strong>Plan Profesional</strong> está pensado para empresas que necesitan una web más completa, 
+      con varias secciones para explicar en detalle sus servicios, su equipo y generar confianza con sus clientes.  
+      Un diseño moderno, responsivo y totalmente <span class="text-blue-400">adaptado a tu marca</span>.
+    </p>
 
+    <!-- Features -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">🏠</span>
+        <p class="text-gray-200">Página de inicio impactante y moderna</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">👥</span>
+        <p class="text-gray-200">Sección "Quiénes somos" para presentar tu empresa</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">🛠️</span>
+        <p class="text-gray-200">Página de servicios para mostrar lo que ofreces</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">📞</span>
+        <p class="text-gray-200">Formulario de contacto integrado</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-blue-600/20 p-8 rounded-2xl border border-blue-600 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-3 text-blue-400">Ideal para negocios en crecimiento</h3>
+      <p class="text-gray-300 mb-6">
+        Si ya tienes trayectoria y buscas un sitio profesional que te represente, este plan es perfecto para ti.
+        Optimizado para móviles y fácil de navegar, hará que tus clientes confíen en tu marca.
+      </p>
+      <a href="/contacto" class="inline-block bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg font-medium transition-colors">
+        Quiero mi Plan Profesional
+      </a>
+    </div>
+  </section>
 </Layout>
