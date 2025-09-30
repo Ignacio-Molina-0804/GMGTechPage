@@ -1,9 +1,46 @@
 ---
-// servicio1.astro
-
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout title="Plan Esencial">
+  <section class="py-20 text-center text-white max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-blue-400 mb-6">Plan Esencial</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg mb-12">
+      El <strong>Plan Esencial</strong> es la opción ideal para emprendedores o negocios que buscan tener una 
+      <span class="text-blue-400">presencia online rápida y profesional</span>. Con una página de una sola vista, 
+      tu empresa podrá mostrar quién eres, qué haces y cómo contactarte, todo en un sitio moderno y optimizado.
+    </p>
 
+    <!-- Features -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">⚡</span>
+        <p class="text-gray-200">Página de una sola vista con navegación fluida</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">🎨</span>
+        <p class="text-gray-200">Diseño personalizado con los colores y logo de tu marca</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">📄</span>
+        <p class="text-gray-200">Sección clara sobre la empresa y los servicios que ofreces</p>
+      </div>
+      <div class="flex items-start gap-4 bg-gray-800/60 p-5 rounded-xl shadow-md hover:scale-105 transition-transform">
+        <span class="text-blue-500 text-2xl">🔗</span>
+        <p class="text-gray-200">Footer con enlaces directos a tus redes sociales</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-blue-600/20 p-8 rounded-2xl border border-blue-600 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-3 text-blue-400">¿Es tu primera web?</h3>
+      <p class="text-gray-300 mb-6">
+        Este plan está diseñado para que tu negocio comience a crecer en internet sin complicaciones.
+        Obtén una página clara, moderna y a tu medida en pocos días.
+      </p>
+      <a href="/contacto" class="inline-block bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg font-medium transition-colors">
+        Quiero mi Plan Esencial
+      </a>
+    </div>
+  </section>
 </Layout>
