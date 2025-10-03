@@ -1,5 +1,4 @@
 // src/scripts/cardCarousel.ts
-
 export function initCardCarousel(selector: string, interval: number = 5000) {
   const container = document.querySelector(selector);
   if (!container) return;
@@ -11,7 +10,11 @@ export function initCardCarousel(selector: string, interval: number = 5000) {
     cards.forEach((card, i) => {
       card.style.transition = "transform 0.8s ease-in-out, opacity 0.8s ease-in-out";
       card.style.zIndex = String(zIndexBase - i);
-      card.style.transform = `translate(${i * 20}px, ${i * 20}px) scale(${1 - i * 0.08})`;
+      
+      // En móviles uso menos desplazamiento para que no se desborde
+      const offset = window.innerWidth < 640 ? i * 5 : i * 20;
+
+      card.style.transform = `translate(${offset}px, ${offset}px) scale(${1 - i * 0.08})`;
       card.style.opacity = i === 0 ? "1" : "0.9";
     });
   }
@@ -25,4 +28,7 @@ export function initCardCarousel(selector: string, interval: number = 5000) {
 
   setPositions();
   setInterval(rotateCards, interval);
+
+  // Redibujar al cambiar tamaño de pantalla
+  window.addEventListener("resize", setPositions);
 }

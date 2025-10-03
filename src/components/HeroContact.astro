@@ -1,17 +1,16 @@
 ---
- // HeroContact.astro
- import UsersIcon from "./icons/UsersIcon.astro"
+import UsersIcon from "./icons/UsersIcon.astro"
 ---
 
-<section class="pt-40 px-8">
-  <section class="flex flex-col md:flex-row justify-between items-center gap-6">
+<section class="pt-28 sm:pt-40 px-4 sm:px-8">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-6xl mx-auto">
     
     <!-- Texto -->
     <div class="text-center md:text-left max-w-lg">
-      <h1 class="text-white text-4xl font-bold mb-4">
+      <h1 class="text-white text-3xl sm:text-4xl font-bold mb-4">
         Contacto
       </h1>
-      <h3 class="text-white text-xl leading-relaxed">
+      <h3 class="text-white text-lg sm:text-xl leading-relaxed">
         Hablemos de tu <span class="text-blue-400 font-semibold">proyecto</span>.  
         Te ofrecemos <span class="text-blue-200 font-semibold">ideas claras</span>,  
         <span class="text-blue-200 font-semibold">respuestas rápidas</span>  
@@ -22,8 +21,8 @@
 
     <!-- Icono -->
     <div class="flex justify-center md:justify-end">
-      <UsersIcon class="size-52 text-blue-400 drop-shadow-lg" />
+      <UsersIcon class="w-40 h-40 sm:w-52 sm:h-52 text-blue-400 drop-shadow-lg" />
     </div>
     
-  </section>
+  </div>
 </section>
