@@ -2,17 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import GmailIcon from "../components/icons/GmailIcon.astro";
 import PhoneIcon from "../components/icons/PhoneIcon.astro";
-import MapIcon from "../components/icons/MapIcon.astro";
-
 import HeroContact from "../components/HeroContact.astro";
+
+const pageTitle = "Contacto | GMG Tech";
+const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar tu presencia digital o conocer nuestros planes. Asesoramiento personalizado y respuesta rápida.";
 ---
 
-<Layout>
+<Layout title={pageTitle} description={pageDescription}>
   <section class="min-h-screen from-gray-900 via-gray-800 to-black text-white px-4 sm:px-6">
-    <!-- Título principal -->
     <HeroContact />
 
-    <!-- Título y descripción de servicios -->
     <div class="max-w-6xl mx-auto text-center mb-10 sm:mb-16 pt-20 sm:pt-26">
       <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-blue-400">Nuestros Servicios</h2>
       <p class="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">

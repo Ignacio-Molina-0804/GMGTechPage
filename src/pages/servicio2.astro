@@ -1,8 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const pageTitle = "Plan Profesional | GMG Tech";
+const pageDescription = "El Plan Profesional de GMG Tech ofrece un sitio completo y moderno con múltiples secciones, diseño personalizado y contacto integrado. Ideal para empresas en crecimiento.";
 ---
 
-<Layout title="Plan Profesional">
+<Layout title={pageTitle} description={pageDescription}>
   <section class="py-12 sm:py-20 text-center text-white max-w-6xl mx-auto px-4 sm:px-6">
     <h2 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-6">Plan Profesional</h2>
     <p class="text-gray-300 max-w-3xl mx-auto text-base sm:text-lg mb-10 sm:mb-12">
