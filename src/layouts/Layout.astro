@@ -1,26 +1,59 @@
 ---
-// Layout.astro
 import "../styles/global.css";
 import "@fontsource/barlow";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+// Props opcionales por página
+const {
+  title = "GMG Tech | Innovación y Crecimiento Digital",
+  description = "En GMG Tech impulsamos tu presencia online con estrategias digitales, desarrollo web y marketing tecnológico. Transformá tu negocio con innovación real.",
+  image = "/favicon.svg",
+  url = "gmgtech.netlify.app", // cambiá por tu dominio
+  keywords = "GMG Tech, tecnología, marketing digital, desarrollo web, innovación, estrategias online, redes de mercadeo",
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="min-h-full bg-slate-950">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Principal -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="GMG Tech" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={url} />
+    <meta property="og:site_name" content="GMG Tech" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
 
-    <meta name="generator" content={Astro.generator} />
-    <title>GMG Tech</title>
+    <!-- Canonical -->
+    <link rel="canonical" href={url} />
   </head>
 
   <body
-    class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_1000px_at_50%_200px,#3e3e3e,transparent),linear-gradient(to_bottom,#0f172a,#020617)] bg-repeat"
+    class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_1000px_at_50%_200px,#3e3e3e,transparent),linear-gradient(to_bottom,#0f172a,#020617)] bg-repeat text-white"
   >
     <Header />
     <main>
