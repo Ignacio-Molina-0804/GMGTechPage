@@ -1,5 +1,8 @@
 ---
+import { initCardCarousel } from "../scripts/cardCarousel";
+import carouselData from "../data/carouselData.json";
 ---
+
 <section class="pt-28 sm:pt-40 px-4 sm:px-8">
   <div class="flex flex-col md:flex-row justify-center items-center gap-8 max-w-6xl mx-auto">
     
@@ -14,24 +17,25 @@
       </h3>
     </div>
 
-    <!-- Carrusel -->
+    <!-- Carrusel dinámico -->
     <div id="carousel" class="relative w-full md:w-1/2 h-64 sm:h-80 overflow-hidden">
-      <a href="https://portfolio-ignacio-molina.netlify.app" target="_blank" class="card absolute w-full h-full">
-        <img src="/pageImage/pagina-1.jpg" class="w-full h-full object-cover rounded-xl shadow-lg">
-      </a>
-      <a href="https://gastonmolinaguide.netlify.app" target="_blank" class="card absolute w-full h-full">
-        <img src="/pageImage/pagina-2.jpg" class="w-full h-full object-cover rounded-xl shadow-lg">
-      </a>
-      <a href="https://portfolio-ignacio-molina.netlify.app" target="_blank" class="card absolute w-full h-full">
-        <img src="/pageImage/pagina-1.jpg" class="w-full h-full object-cover rounded-xl shadow-lg">
-      </a>
+      {
+        carouselData.map((item) => (
+          <a href={item.url} target="_blank" class="card absolute w-full h-full" title={item.title}>
+            <img 
+              src={item.image} 
+              alt={item.title} 
+              class="w-full h-full object-cover rounded-xl shadow-lg"
+            />
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>
 
 <script>
   import { initCardCarousel } from "../scripts/cardCarousel";
-
   document.addEventListener("DOMContentLoaded", () => {
     initCardCarousel("#carousel");
   });
