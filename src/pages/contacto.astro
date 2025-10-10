@@ -5,15 +5,20 @@ import PhoneIcon from "../components/icons/PhoneIcon.astro";
 import HeroContact from "../components/HeroContact.astro";
 
 const pageTitle = "Contacto | GMG Tech";
-const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar tu presencia digital o conocer nuestros planes. Asesoramiento personalizado y respuesta rápida.";
+const pageDescription =
+  "Contactá con GMG Tech para crear tu sitio web, mejorar tu presencia digital o conocer nuestros planes. Asesoramiento personalizado y respuesta rápida.";
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <section class="min-h-screen from-gray-900 via-gray-800 to-black text-white px-4 sm:px-6">
+  <section
+    class="min-h-screen from-gray-900 via-gray-800 to-black text-white px-4 sm:px-6"
+  >
     <HeroContact />
 
     <div class="max-w-6xl mx-auto text-center mb-10 sm:mb-16 pt-20 sm:pt-26">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-blue-400">Nuestros Servicios</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-blue-400">
+        Nuestros Servicios
+      </h2>
       <p class="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">
         Si todavía no lo recordás, te mostramos nuevamente todos nuestros
         <span class="text-blue-400 font-semibold">servicios</span>, pensados
@@ -23,54 +28,71 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
     </div>
 
     <!-- Grid de servicios -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 max-w-6xl mx-auto px-2">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 max-w-4xl md:max-w-6xl mx-auto px-2"
+    >
       <!-- Card Servicio 1 -->
-      <div class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between">
+      <div
+        class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between w-full max-w-sm mx-auto"
+      >
         <div>
           <h3 class="text-lg font-semibold mb-3 text-center">Básico</h3>
-          <ul class="text-gray-300 mb-6 space-y-1 text-sm">
-            <li>• Página de una sola vista</li>
-            <li>• Diseño personalizado con logo y colores</li>
-            <li>• Sección sobre la empresa y sus servicios</li>
-            <li>• Navegación sencilla por anclas</li>
-            <li>• Footer con redes sociales</li>
+          <ul class="text-gray-300 mb-6 space-y-1 text-sm text-center">
+            <li>- Página de una sola vista -</li>
+            <li>- Diseño personalizado con logo y colores -</li>
+            <li>- Sección sobre la empresa y sus servicios -</li>
+            <li>- Navegación sencilla por anclas -</li>
+            <li>- Footer con redes sociales -</li>
           </ul>
         </div>
-        <a href="/servicio1" class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm">
+        <a
+          href="/servicio1"
+          class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm"
+        >
           Leer más
         </a>
       </div>
 
       <!-- Card Servicio 2 -->
-      <div class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between">
+      <div
+        class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between w-full max-w-sm mx-auto"
+      >
         <div>
           <h3 class="text-lg font-semibold mb-3 text-center">Profesional</h3>
-          <ul class="text-gray-300 mb-6 space-y-1 text-sm">
-            <li>• Sitio web con múltiples páginas</li>
-            <li>• Diseño a medida</li>
-            <li>• Secciones: Inicio, Quiénes somos, Servicios, Contacto</li>
-            <li>• Formulario de contacto integrado</li>
-            <li>• Optimización para móviles</li>
+          <ul class="text-gray-300 mb-6 space-y-1 text-sm text-center">
+            <li>- Sitio web con múltiples páginas -</li>
+            <li>- Diseño a medida -</li>
+            <li>- Secciones: Inicio, Quiénes somos, Servicios, Contacto -</li>
+            <li>- Formulario de contacto integrado -</li>
+            <li>- Optimización para móviles -</li>
           </ul>
         </div>
-        <a href="/servicio2" class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm">
+        <a
+          href="/servicio2"
+          class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm"
+        >
           Leer más
         </a>
       </div>
 
       <!-- Card Servicio 3 -->
-      <div class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between">
+      <div
+        class="bg-gray-900/60 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col justify-between w-full max-w-sm mx-auto"
+      >
         <div>
           <h3 class="text-lg font-semibold mb-3 text-center">Premium</h3>
-          <ul class="text-gray-300 mb-6 space-y-1 text-sm">
-            <li>• Todas las ventajas del plan Profesional</li>
-            <li>• Vistas ilimitadas</li>
-            <li>• Sitio multi-idioma</li>
-            <li>• Hosting y mantenimiento prioritario</li>
-            <li>• Soporte técnico preferencial</li>
+          <ul class="text-gray-300 mb-6 space-y-1 text-sm text-center">
+            <li>- Todas las ventajas del plan Profesional -</li>
+            <li>- Vistas ilimitadas -</li>
+            <li>- Sitio multi-idioma -</li>
+            <li>- Hosting y mantenimiento prioritario -</li>
+            <li>- Soporte técnico preferencial -</li>
           </ul>
         </div>
-        <a href="/servicio3" class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm">
+        <a
+          href="/servicio3"
+          class="block w-full sm:w-auto text-center py-2 px-4 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors font-medium text-sm"
+        >
           Leer más
         </a>
       </div>
@@ -78,28 +100,74 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
 
     <!-- Sección de contacto + cuestionario -->
     <section class="min-h-screen text-white px-4 sm:px-6 py-12 sm:py-20">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-stretch">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-stretch"
+      >
         <!-- Formulario (izquierda) -->
-        <div class="bg-gray-900/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-gray-700 relative overflow-hidden flex flex-col justify-between">
-          <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-transparent to-purple-600/10 pointer-events-none"></div>
+        <div
+          class="bg-gray-900/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-gray-700 relative overflow-hidden flex flex-col justify-between"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-transparent to-purple-600/10 pointer-events-none"
+          >
+          </div>
           <div class="relative z-10">
-            <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-blue-400">Tu Cuestionario</h3>
-            <form action="https://formsubmit.co/gmgtech.ar@gmail.com" method="POST" class="space-y-5">
+            <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-blue-400">
+              Tu Cuestionario
+            </h3>
+            <form
+              action="https://formsubmit.co/gmgtech.ar@gmail.com"
+              method="POST"
+              class="space-y-5"
+            >
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" name="nombre" placeholder="Nombre" required class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"/>
-                <input type="email" name="email" placeholder="Gmail" required class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"/>
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                  class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Gmail"
+                  required
+                  class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                />
               </div>
-              <select name="servicio" required class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+              <select
+                name="servicio"
+                required
+                class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              >
                 <option disabled selected>Selecciona un servicio</option>
                 <option>Plan Básico</option>
                 <option>Plan Profesional</option>
                 <option>Plan Premium</option>
               </select>
-              <input type="tel" name="telefono" placeholder="Teléfono" class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"/>
-              <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
-              <input type="hidden" name="_next" value="http://localhost:4321/contacto"/>
-              <input type="hidden" name="_captcha" value="true"/>
-              <button type="submit" class="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 rounded-lg font-semibold shadow-lg transition-all duration-300">
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="Teléfono"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              />
+              <textarea
+                name="mensaje"
+                rows="4"
+                placeholder="Escribe tu mensaje..."
+                class="w-full px-4 py-3 rounded-lg bg-gray-800/80 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              ></textarea>
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:4321/contacto"
+              />
+              <input type="hidden" name="_captcha" value="true" />
+              <button
+                type="submit"
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 rounded-lg font-semibold shadow-lg transition-all duration-300"
+              >
                 Enviar
               </button>
             </form>
@@ -107,10 +175,17 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
         </div>
 
         <!-- Contacto (derecha) -->
-        <div class="bg-gray-900/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-gray-700 relative overflow-hidden flex flex-col justify-between">
-          <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-transparent to-purple-600/10 pointer-events-none"></div>
+        <div
+          class="bg-gray-900/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-gray-700 relative overflow-hidden flex flex-col justify-between"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-transparent to-purple-600/10 pointer-events-none"
+          >
+          </div>
           <div class="relative z-10">
-            <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-400">Contacto</h3>
+            <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-400">
+              Contacto
+            </h3>
             <p class="text-gray-300 mb-8 text-base sm:text-lg">
               ¿Tenés un proyecto en mente o querés más información? Escribinos y
               te responderemos lo antes posible.
@@ -118,7 +193,9 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
             <div class="space-y-6 mb-10">
               <!-- Email -->
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400">
+                <div
+                  class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400"
+                >
                   <GmailIcon class="w-6 h-6" />
                 </div>
                 <p>
@@ -128,7 +205,9 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
               </div>
               <!-- Teléfono -->
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-600/20 text-green-400">
+                <div
+                  class="w-12 h-12 flex items-center justify-center rounded-full bg-green-600/20 text-green-400"
+                >
                   <PhoneIcon class="w-6 h-6" />
                 </div>
                 <p>
@@ -139,13 +218,26 @@ const pageDescription = "Contactá con GMG Tech para crear tu sitio web, mejorar
             </div>
             <!-- ¿Por qué contactarnos? -->
             <div class="bg-gray-800/70 p-6 rounded-xl shadow-md">
-              <h4 class="text-lg sm:text-xl font-semibold mb-4 text-white">¿Por qué contactarnos?</h4>
+              <h4 class="text-lg sm:text-xl font-semibold mb-4 text-white">
+                ¿Por qué contactarnos?
+              </h4>
               <ul class="space-y-3 text-gray-300 text-sm sm:text-base">
-                <li class="flex items-center gap-2"><span class="text-green-400">✔</span> Entregas a tiempo</li>
-                <li class="flex items-center gap-2"><span class="text-green-400">✔</span> Página 100% rápida</li>
-                <li class="flex items-center gap-2"><span class="text-green-400">✔</span> Mantenimiento en todo momento</li>
-                <li class="flex items-center gap-2"><span class="text-green-400">✔</span> Soporte técnico personalizado</li>
-                <li class="flex items-center gap-2"><span class="text-green-400">✔</span> Optimización SEO y marketing digital</li>
+                <li class="flex items-center gap-2">
+                  <span class="text-green-400">✔</span> Entregas a tiempo
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-green-400">✔</span> Página 100% rápida
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-green-400">✔</span> Mantenimiento en todo momento
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-green-400">✔</span> Soporte técnico personalizado
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-green-400">✔</span> Optimización SEO y marketing
+                  digital
+                </li>
               </ul>
             </div>
           </div>
