@@ -9,20 +9,19 @@ const pageDescription =
 
 <Layout title={pageTitle} description={pageDescription}>
   <section
-    class="min-h-screen flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 relative overflow-hidden"
+    class="min-h-[100dvh] flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 relative overflow-hidden"
   >
     <!-- Fondo decorativo -->
     <div
       class="absolute inset-0 bg-gradient-to-tr from-blue-700/10 via-transparent to-purple-600/10 pointer-events-none"
-    >
-    </div>
+    ></div>
 
     <!-- Contenido -->
     <div
-      class="relative z-10 max-w-2xl mx-auto animate-fade-up opacity-0"
+      class="relative z-10 mx-auto w-full max-w-[90%] sm:max-w-2xl animate-fade-up opacity-0"
       style="animation: fadeUp 0.8s ease forwards;"
     >
-      <!-- Nuevo ícono de confirmación -->
+      <!-- Ícono de confirmación -->
       <div class="flex items-center justify-center mb-8">
         <div
           class="relative w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-green-500 shadow-[0_0_25px_rgba(0,255,150,0.35)]"
@@ -38,7 +37,8 @@ const pageDescription =
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M5 13l4 4L19 7"></path>
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </div>
       </div>
@@ -50,12 +50,12 @@ const pageDescription =
 
       <!-- Descripción -->
       <p
-        class="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg mb-8 leading-relaxed"
+        class="text-gray-200 sm:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg mb-8 leading-relaxed"
       >
         Recibimos tu mensaje correctamente y nuestro equipo de
-        <span class="text-blue-400 font-semibold">GMG Tech</span> se pondrá en contacto
-        con vos lo antes posible. Mientras tanto, podés seguir explorando nuestros
-        servicios o escribirnos por WhatsApp.
+        <span class="text-blue-400 font-semibold">GMG Tech</span> se pondrá en
+        contacto con vos lo antes posible. Mientras tanto, podés seguir
+        explorando nuestros servicios o escribirnos por WhatsApp.
       </p>
 
       <!-- Botones -->
@@ -66,6 +66,7 @@ const pageDescription =
         >
           Volver al inicio
         </a>
+
         <a
           href="https://wa.me/5492616406896?text=Hola%20GMG%20Tech!%20Acabo%20de%20enviar%20el%20formulario%20desde%20su%20web%20y%20quiero%20consultar%20por%20sus%20servicios."
           target="_blank"
@@ -73,7 +74,7 @@ const pageDescription =
           class="px-6 py-3 bg-green-600 hover:bg-green-500 rounded-lg font-semibold shadow-lg shadow-green-700/30 transition-all duration-300 flex items-center justify-center gap-2"
         >
           <span class="flex items-center gap-2">
-            <WhatsappIcon />
+            <WhatsappIcon class="w-5 h-5 sm:w-6 sm:h-6" />
             Enviar mensaje por WhatsApp
           </span>
         </a>
